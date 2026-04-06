@@ -1,4 +1,4 @@
-Summary
+Summary:
 
 AzureResourceValidator is a PowerShell script designed to automate the validation of Azure Platform Landing Zone deployments. It checks for the presence, configuration, and compliance of essential Azure resources and settings, ensuring that your environment aligns with best practices and organizational requirements. The script provides clear output for remediation and can be integrated into CI/CD pipelines or used as a standalone validation tool for platform governance.
 
