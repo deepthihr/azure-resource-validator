@@ -9,25 +9,15 @@ Key Features:
 
 ✅ Automatic Module Management - Checks and installs required modules (Az.Accounts, Az.Resources, ImportExcel)
 
-
-
 ✅ Robust Authentication - Connects to Azure with retry logic and exponential backoff
 
-
-
 ✅ Comprehensive Validation:
-
 * Validates subscription access
 * Inventories all resource groups
 * Lists all resources with detailed information
 * Creates summary by resource type
 
-
-
-
-
 ✅ Excel Export with multiple worksheets:
-
 * Subscriptions - All subscriptions with validation status
 * ResourceGroups - All resource groups with details
 * ResourceSummary - Count of resources by type
@@ -35,30 +25,20 @@ Key Features:
 * ExecutionSummary - Overview of the validation run
 
 
-
-
-
 ✅ Security Best Practices:
-
 * Uses Azure authentication (no hardcoded credentials)
 * Error handling throughout
 * Logging and status updates
 
-
-
-The script will prompt you to authenticate when connecting to the new tenant, and then proceed to validate all accessible subscriptions within that tenant.
-
-
+The script will prompt you to authenticate when connecting to the new tenant, and then proceed to validate all accessible subscriptions within that tenant (minimum reader access)
 
 The script will create an Excel file named AzureResourceValidation\_YYYYMMDD\_HHMMSS.xlsx with all the validation results and offer to open it automatically when complete.
-
-
 
 Usage Examples: -
 
 \# Connect to a different tenant and validate all subscriptions in that tenant
 
-.\\AzureResourceValidator.ps1 -TenantId "87654321-4321-4321-4321-210987654321"
+.\\AzureResourceValidator.ps1 -TenantId "87654321-4321-4321-4321-110987654321"
 
 
 
