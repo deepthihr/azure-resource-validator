@@ -12,7 +12,7 @@ Key Features:
 ✅ Robust Authentication - Connects to Azure with retry logic and exponential backoff
 
 ✅ Comprehensive Validation:
-* Validates subscription access
+* Validates subscription access (Minimum Reader Access)
 * Inventories all resource groups
 * Lists all resources with detailed information
 * Creates summary by resource type
